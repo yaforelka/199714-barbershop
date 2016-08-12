@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header-logo">
-          <a href="index.html">
-            <img src="img/header-logo.png" width="111" height="24" alt="Барбершоп &laquo;Бородинский&raquo;">
-          </a>
-        </div>
+      <div class="container clearfix">
         <nav class="header-navigation">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="img/header-logo.png" width="111" height="24" alt="Барбершоп &laquo;Бородинский&raquo;">
+            </a>
+          </div>
           <ul>
             <li>
               <a href="#">Информация</a>
@@ -37,14 +38,14 @@
         </div>
       </div>
     </header>
-    <main class="container">
+    <main class="container clearfix">
       <h1>Средства для ухода</h1>
       <div class="breadcrumbs">
         <a href="index.html">Главная</a>
         <a href="catalog.html">Магазин</a>
         <a class="active">Средства ухода</a>
       </div>
-      <div class="filter-form">
+      <div class="filter-form clearfix">
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Производители:</legend>
@@ -96,7 +97,12 @@
             <a href="catalog-item.html">
               <img src="img/catalog/BOF-travel.jpg" width="220" height="165" alt="Набор для путешествий &laquo;BAXTER OF CALIFORNIA&raquo;">
             </a>
-            <a href="catalog-item.html">Набор для путешествий &laquo;BAXTER OF CALIFORNIA&raquo;</a>
+            <h2>
+              <a href="catalog-item.html">
+                <span class="item-category">Набор для путешествий</span>
+                <span class="item-name">&laquo;Baxter Of California&raquo;</span>
+              </a>
+            </h2>
             <div class="item-price">
               <b>2 990 руб.</b>
               <a href="#">Купить</a>
@@ -106,7 +112,12 @@
             <a href="#">
               <img src="img/catalog/BOF-conditioner.jpg" width="220" height="165" alt="Увлажняющий кондиционер &laquo;BAXTER OF CALIFORNIA&raquo;">
             </a>
-            <a href="#">Увлажняющий кондиционер &laquo;BAXTER OF CALIFORNIA&raquo;</a>
+            <h2>
+              <a href="#">
+                <span class="item-category">Увлажняющий кондиционер</span>
+                <span class="item-name">&laquo;Baxter Of California&raquo;</span>
+              </a>
+            </h2>
             <div class="item-price">
               <b>750 руб.</b>
               <a href="#">Купить</a>
@@ -116,7 +127,12 @@
             <a href="#">
               <img src="img/catalog/sua-gel.jpg" width="220" height="165" alt="Гель для волос &laquo;SUAVECITO&raquo;">
             </a>
-            <a href="#">Гель для волос &laquo;SUAVECITO&raquo;</a>
+            <h2>
+              <a href="#">
+                <span class="item-category">Гель для волос</span>
+                <span class="item-name">&laquo;Suavecito&raquo;</span>
+              </a>
+            </h2>
             <div class="item-price">
               <b>290 руб.</b>
               <a href="#">Купить</a>
@@ -126,7 +142,12 @@
             <a href="#">
               <img src="img/catalog/AC-clay.jpg" width="220" height="165" alt="Глина для укладки волос &laquo;AMERICAN CREW&raquo;">
             </a>
-            <a href="#">Глина для укладки волос &laquo;AMERICAN CREW&raquo;</a>
+            <h2>
+              <a href="#">
+                <span class="item-category">Глина для укладки волос</span>
+                <span class="item-name">&laquo;American Crew&raquo;</span>
+              </a>
+            </h2>
             <div class="item-price">
               <b>500 руб.</b>
               <a href="#">Купить</a>
@@ -136,20 +157,30 @@
             <a href="#">
               <img src="img/catalog/AC-gel.jpg" width="220" height="165" alt="Гель для волос &laquo;AMERICAN CREW&raquo;">
             </a>
-            <a href="#">Гель для волос &laquo;AMERICAN CREW&raquo;</a>
+            <h2>
+              <a href="#">
+                <span class="item-category">Гель для волос</span>
+                <span class="item-name">&laquo;American Crew&raquo;</span>
+              </a>
+            </h2>
             <div class="item-price">
               <b>300 руб.</b>
-              <a href="#"></a>
+              <a href="#">Купить</a>
             </div>
           </article>
           <article class="catalog-item">
             <a href="#">
               <img src="img/catalog/BOF-shaving.jpg" width="220" height="165" alt="Набор для бритья &laquo;Baxter of California&raquo;">
             </a>
-            <a href="#">Набор для бритья &laquo;Baxter of California&raquo;</a>
+            <h2>
+              <a href="#">
+                <span class="item-category">Набор для бритья</span>
+                <span class="item-name">&laquo;Baxter of California&raquo;</span>
+              </a>
+            </h2>
             <div class="item-price">
               <b>3 900 руб.</b>
-              <a href="#"></a>
+              <a href="#">Купить</a>
             </div>
           </article>
           <div class="paginator">
@@ -162,7 +193,7 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts">
           Барбершоп &laquo;Бородинский&raquo;<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
