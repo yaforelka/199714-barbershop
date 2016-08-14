@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Набор для путешествий &laquo;Baxter of California&raquo;</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="header-logo">
           <a href="index.html">
             <img src="img/header-logo.png" width="111" height="24" alt="Барбершоп &laquo;Бородинский&raquo;">
@@ -37,47 +38,49 @@
         </div>
       </div>
     </header>
-    <main class="container">
-      <h1>Набор для путешествий &laquo;Baxter of California&raquo;</h1>
-      <div class="breadcrumbs">
-        <a href="index.html">Главная</a>
-        <a href="catalog.html">Магазин</a>
-        <a href="#">Средства ухода</a>
-        <a class="active">Набор для путешествий &laquo;Baxter of California&raquo;</a>
-      </div>
+    <main class="container clearfix">
+      <h1 class="main-title">Набор для путешествий &laquo;Baxter of California&raquo;</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="#">Средства ухода</a></li>
+        <li><a class="active">Набор для путешествий &laquo;Baxter of California&raquo;</a></li>
+      </ul>
       <section class="gallery">
-        <img src="img/catalog-item/item-big-photo.jpg" alt="Набор &laquo;Baxter of California&raquo;" width="460" height="496">
+        <img class="big-photo" src="img/catalog-item/item-big-photo.jpg" alt="Набор &laquo;Baxter of California&raquo;" width="460" height="496">
         <div class="thumbs">
           <img src="img/catalog-item/thumbnail-1.jpg" alt="Коллекция средств ухода" width="140" height="149">
           <img src="img/catalog-item/thumbnail-2.jpg" alt="Кожаная косметичка" width="140" height="149">
           <img src="img/catalog-item/thumbnail-3.jpg" alt="Набор &laquo;Baxter of California&raquo;" width="140" height="149">
         </div>
       </section>
-      <section class="item-description">
-        <p class="item-article">Артикул: Dexter-AE</p>
-        <p>Есть в наличии</p>
-        <p>Travel Kit – необходимый аксессуар во время любого путешествия.
-        В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха:
-        средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь.
-        Набор также может стать отличным подарком.</p>
-        <div class="item-price">
-          <b>3 900 руб.</b>
-          <a href="#"></a>
-        </div>
-      </section>
-      <section class="item-products">
-        <h2>В набор входят:</h2>
-        <ul>
-          <li>Средство для умывания (50 мл)</li>
-          <li>Увлажняющий крем (50 мл)</li>
-          <li>Крем для бритья (50 мл)</li>
-          <li>Крем после бритья, шампунь (50 мл)</li>
-          <li>Удобная кожаная косметичка</li>
-        </ul>
-      </section>
+      <div class="item-about">
+        <section class="item-description">
+          <p class="item-article">Артикул: Dexter-AE</p>
+          <p class="item-available">Есть в наличии</p>
+          <p class="item-features">Travel Kit – необходимый аксессуар во время любого путешествия.
+          В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха:
+          средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь.
+          Набор также может стать отличным подарком.</p>
+          <div class="item-price">
+            <b>3 900 руб.</b>
+            <a href="#">Купить</a>
+          </div>
+        </section>
+        <section class="item-products">
+          <h2>В набор входят:</h2>
+          <ul>
+            <li>Средство для умывания (50 мл)</li>
+            <li>Увлажняющий крем (50 мл)</li>
+            <li>Крем для бритья (50 мл)</li>
+            <li>Крем после бритья, шампунь (50 мл)</li>
+            <li>Удобная кожаная косметичка</li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts">
           Барбершоп &laquo;Бородинский&raquo;<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
