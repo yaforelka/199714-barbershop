@@ -6,15 +6,13 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header class="header">
+  <body class="inner-page">
+    <header class="main-header">
       <div class="container clearfix">
-        <div class="header-logo">
-          <a href="index.html">
-            <img src="img/header-logo.png" width="111" height="24" alt="Барбершоп &laquo;Бородинский&raquo;">
+        <nav class="main-navigation">
+          <a class="logo-inner" href="index.html">
+            <img src="img/header-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
           </a>
-        </div>
-        <nav class="header-navigation">
           <ul>
             <li>
               <a href="#">Информация</a>
@@ -25,29 +23,39 @@
             <li>
               <a href="price.html">Прайс-лист</a>
             </li>
-            <li>
-              <a class="active" href="catalog.html">Магазин</a>
+            <li class="active">
+              <a>Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
             </li>
           </ul>
-         </nav>
+        </nav>
         <div class="user-block">
           <a class="login" href="#">Вход</a>
         </div>
       </div>
     </header>
-    <main class="main-catalog-item">
-      <div class="container clearfix">
-        <h1 class="main-title">Набор для путешествий &laquo;Baxter of California&raquo;</h1>
+    <main class="container clearfix">
+      <div class="inner-page-title">
+        <h1>Набор для путешествий &laquo;Baxter of California&raquo;</h1>
         <ul class="breadcrumbs">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Средства ухода</a></li>
-          <li><a class="active">Набор для путешествий &laquo;Baxter of California&raquo;</a></li>
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Средства для ухода</a>
+          </li>
+          <li class="current">
+            <a>Набор для путешествий &laquo;Baxter of California&raquo;</a>
+          </li>
         </ul>
-        <section class="gallery">
+      </div>
+      <div class="inner-content catalog-item-page clearfix">
+        <section class="item-gallery inner-column-left">
           <img class="big-photo" src="img/catalog-item/item-big-photo.jpg" alt="Набор &laquo;Baxter of California&raquo;" width="460" height="496">
           <div class="thumbs">
             <img src="img/catalog-item/thumbnail-1.jpg" alt="Коллекция средств ухода" width="140" height="149">
@@ -55,22 +63,24 @@
             <img src="img/catalog-item/thumbnail-3.jpg" alt="Набор &laquo;Baxter of California&raquo;" width="140" height="149">
           </div>
         </section>
-        <div class="item-about">
+        <div class="item-about inner-column-right">
           <section class="item-description">
-            <p class="item-article">Артикул: Dexter-AE</p>
-            <p class="item-available">Есть в наличии</p>
-            <p class="item-features">Travel Kit – необходимый аксессуар во время любого путешествия.
-              В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха:
-              средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь.
-              Набор также может стать отличным подарком.</p>
+            <div class="clearfix">
+              <p class="item-article">Артикул: Dexter-AE</p>
+              <p class="item-available">Есть в наличии</p>
+            </div>
+            <p class="item-features">Travel Kit&nbsp;&mdash; необходимый аксессуар во&nbsp;время любого путешествия.
+              В&nbsp;аккуратной кожаной сумке находится все, что нужно для бритья и&nbsp;ухода за&nbsp;кожей
+              во&nbsp;время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья,
+              крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
             <div class="item-price">
-              <b class="grey">3 900 руб.</b>
+              <b class="grey">2 900 руб.</b>
               <a class="btn" href="#">Купить</a>
             </div>
           </section>
           <section class="item-products">
             <h2>В набор входят:</h2>
-            <ul>
+            <ul class="custom-list-2">
               <li>Средство для умывания (50 мл)</li>
               <li>Увлажняющий крем (50 мл)</li>
               <li>Крем для бритья (50 мл)</li>
@@ -81,11 +91,11 @@
         </div>
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer inner-footer catalog-item-footer">
       <div class="container clearfix">
         <section class="footer-contacts">
           Барбершоп &laquo;Бородинский&raquo;<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           <a href="#">Как нас найти?</a><br>
           Телефон: +7 (812) 666-02-66
         </section>
@@ -101,5 +111,25 @@
         </section>
       </div>
     </footer>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="modal-content-title">Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="icon-user" type="text" name="login" placeholder="Логин">
+        <input class="icon-password" type="password"  name="password" placeholder="Пароль">
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember">
+          <span class="checkbox-indicator"></span>
+          Запомните меня
+        </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+        <button class="btn" type="submit">Войти</button>
+      </form>
+    </div>
+    <div class="modal-content-map">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <div id="yandex-map"></div>
+    </div>
   </body>
 </html>
