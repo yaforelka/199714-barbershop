@@ -853,6 +853,10 @@ input:disabled + label:hover {
   margin-bottom: 12px;
 }
 
+.catalog-item a:hover {
+  text-decoration: underline;
+}
+
 .item-category {
   display: block;
   width: 100%;
